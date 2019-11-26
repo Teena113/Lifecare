@@ -1,0 +1,882 @@
+Login
+
+<form class="form-wrap" action="/login" method="post">
+    {% csrf_token %}
+    <h3 class="pb-20 text-center mb-30">login</h3>
+    <input type="text" class="form-control" name="username" placeholder="Name"
+           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient Name'">
+    <input type="password" class="form-control" name="password" placeholder="Password"
+           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+    <button class="primary-btn text-uppercase">login
+
+    </button>
+</form>
+
+
+Doctor registration
+
+<form target="_blank"
+      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+      method="get" class="form-inline">
+
+    <div class="form-group row" style="width: 100%">
+        <div class="col-lg-8 col-md-12">
+            <input name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+            <button class="nw-btn primary-btn circle">Subscribe<span
+                    class="lnr lnr-arrow-right"></span></button>
+        </div>
+    </div>
+    <div class="info"></div>
+</form>
+
+
+Patient registration
+
+<form class="form-wrap mt-5" action="#">
+    <div class="form-group">
+        <label>Patient Firstname</label>
+        <input type="text" class="form-control" name="name" placeholder="Patient Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group">
+        <label>Patient Lastname</label>
+        <input type="text" class="form-control" name="name" placeholder="Patient Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" class="form-control" name="email" placeholder="Email Address"
+               onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label>Password</label>
+            <input type="email" class="form-control" name="Password" placeholder=""
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+        </div>
+        <div class="col-6">
+            <label>Confirm Password</label>
+            <input type="email" class="form-control" name="gender" placeholder=""
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+        </div>
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button class="text-uppercase btn btn-block btn-dark">register</button>
+    </div>
+</form>
+
+
+Doctor profile view edit
+
+<form class="form-wrap mt-5" action="#">
+    <div class="form-group">
+        <label>Firstname</label>
+        <input type="text" class="form-control" name="name" placeholder="Patient Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group">
+        <label>Lastname</label>
+        <input type="text" class="form-control" name="name" placeholder="Patient Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+
+    <div class="form-group row">
+        <div class="col-4">
+            <label>Qualification</label>
+            <input type="text" class="form-control" name="phone" placeholder="Phone "
+                   onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = 'Phone'">
+        </div>
+        <div class="col-4">
+            <label>Specification</label>
+            <input type="text" class="form-control" name="phone" placeholder="Phone "
+                   onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = 'Phone'">
+        </div>
+        <div class="col-4">
+            <label>Department</label>
+            <input type="text" class="form-control" name="phone" placeholder="Phone "
+                   onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = 'Phone'">
+        </div>
+
+
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label for="email">DOB:</label>
+            <input id="datepicker" width="300" name="dob">
+            <script>
+                $('#datepicker').datepicker({
+                    uiLibrary: 'bootstrap4'
+                });
+            </script>
+        </div>
+        <div class="col-6">
+            <label for="gender">Gender:</label>
+            <div class="col-7">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="Male">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="Female">Female
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Address</label>
+        <input type="email" class="form-control" name="email" placeholder="Email Address"
+               onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label>Email Id</label>
+            <input type="email" class="form-control" name="Password" placeholder=""
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+        </div>
+        <div class="col-6">
+            <label>Phone</label>
+            <input type="email" class="form-control" name="gender" placeholder=""
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="email" class="form-control" name="Password" placeholder=""
+               onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button class="text-uppercase btn btn-block btn-dark">update</button>
+    </div>
+</form>
+
+
+Patient profile view edit
+
+<form class="form-wrap mt-5" action="#">
+    <div class="form-group">
+        <label>Firstname</label>
+        <input type="text" class="form-control" name="name" placeholder="Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group">
+        <label>Lastname</label>
+        <input type="text" class="form-control" name="name" placeholder="Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label for="email">DOB:</label>
+            <input id="datepicker" width="300" name="dob">
+            <script>
+                $('#datepicker').datepicker({
+                    uiLibrary: 'bootstrap4'
+                });
+            </script>
+        </div>
+        <div class="col-6">
+            <label for="gender">Gender:</label>
+            <div class="col-7">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="Male">Male
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="gender" value="Female">Female
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Address</label>
+        <input type="email" class="form-control" name="email" placeholder="Email Address"
+               onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group row">
+        <div class="col-6">
+            <label>Email Id</label>
+            <input type="email" class="form-control" name="Password" placeholder=""
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+        </div>
+        <div class="col-6">
+            <label>Phone</label>
+            <input type="email" class="form-control" name="gender" placeholder=""
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="email" class="form-control" name="Password" placeholder=""
+               onfocus="this.placeholder = ''" onblur="this.placeholder = ''">
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button class="text-uppercase btn btn-block btn-dark">update</button>
+    </div>
+</form>
+
+
+All patients list
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Patient</th>
+        <th>Contact</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            {% if d.loginmodel_set.first.status == 'pending' %}
+                <tr>
+                    <td>
+                        Name :
+                        <h1>{{ d.patientmodel_set.first.firstname }} {{ d.patientmodel_set.first.lastname }}</h1>
+                        <br/>
+                        DOB : {{ d.patientmodel_set.first.dob }}<br/>
+                        Gender : {{ d.patientmodel_set.first.gender }}
+                    </td>
+                    <td>
+                        Email : {{ d.email }}<br/>
+                        Phone : {{ d.patientmodel_set.first.phone }}<br/>
+                        Address : {{ d.patientmodel_set.first.address }}
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Doctor requests list and approve and delete requests
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Doctor</th>
+        <th>Contact</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            {% if d.loginmodel_set.first.status == 'pending' %}
+                <tr>
+                    <td>
+                        Name :
+                        <h1>{{ d.doctormodel_set.first.firstname }} {{ d.doctormodel_set.first.lastname }}</h1>
+                        <br/>
+                        DOB : {{ d.doctormodel_set.first.dob }}<br/>
+                        Gender : {{ d.doctormodel_set.first.gender }}
+                    </td>
+                    <td>
+                        Email : {{ d.email }}<br/>
+                        Phone : {{ d.doctormodel_set.first.phone }}<br/>
+                        Address : {{ d.doctormodel_set.first.address }}
+                    </td>
+                    <td>
+                        <a href="/approve_user/{{ d.id }}/" title="approve">
+                            <i class="fas fa-check-circle col-sm-6"></i>
+                        </a>
+                        <a href="/delete_user/{{ d.id }}/" title="reject">
+                            <i class="fas fa-times-circle col-sm-6"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Admin approved doctors list
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Doctor</th>
+        <th>Contact</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            {% if d.loginmodel_set.first.status == 'pending' %}
+                <tr>
+                    <td>
+                        Name :
+                        <h1>{{ d.doctormodel_set.first.firstname }} {{ d.doctormodel_set.first.lastname }}</h1>
+                        <br/>
+                        DOB : {{ d.doctormodel_set.first.dob }}<br/>
+                        Gender : {{ d.doctormodel_set.first.gender }}
+                    </td>
+                    <td>
+                        Email : {{ d.email }}<br/>
+                        Phone : {{ d.doctormodel_set.first.phone }}<br/>
+                        Address : {{ d.doctormodel_set.first.address }}
+                    </td>
+                    <td>
+                        {% if d.loginmodel_set.first.status == 'approved' %}
+                            <a href="/block_user/{{ d.id }}/"
+                               title="block">
+                                <i class="fas fa-ban col-lg-6"></i>
+                            </a>
+                        {% else %}
+                            <a href="/approve_user/{{ d.id }}/"
+                               title="approve">
+                                <i class="fas fa-check-circle col-sm-6"></i>
+                            </a>
+                        {% endif %}
+                        <a href="/delete_user/{{ d.id }}/"
+                           title="more info">
+                            <i class="fas fa-info-circle col-lg-6"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Doctor Leave Application
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Doctor memo</th>
+        <th>Status</th>
+        <th>Admin memo</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            <tr>
+                <td>{{ d.date }}</td>
+                <td>{{ d.doctor_memo }}</td>
+                <td>{{ d.status }}</td>
+                <td>{{ d.admin_memo }}</td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Admin view leave applications and approve leave applications
+
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Doctor</th>
+        <th>Doctor Memo</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            {% if d.status == 'pending' %}
+                <tr>
+                    <td>{{ d.date }}</td>
+                    <td>{{ d.loginmodel_set.first.firstname }} {{ d.loginmodel_set.first.lastname }}</td>
+                    <td>{{ d.doctor_memo }}</td>
+                    <td>
+                        <a href="/approve_user/{{ d.loginmodel_set.first.id }}/" title="approve">
+                            <i class="fas fa-check-circle col-sm-6"></i>
+                        </a>
+                        <a href="/delete_user/{{ d.loginmodel_set.first.id }}/" title="reject">
+                            <i class="fas fa-times-circle col-sm-6"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Admin view approved leave applications
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Doctor</th>
+        <th>Doctor Memo</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            {% if d.status == 'approved' %}
+                <tr>
+                    <td>{{ d.date }}</td>
+                    <td>{{ d.loginmodel_set.first.firstname }} {{ d.loginmodel_set.first.lastname }}</td>
+                    <td>{{ d.doctor_memo }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+Patients view doctor for booking
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Doctor</th>
+        <th>Contact</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            <tr>
+                <td>
+                    Name :
+                    <h1>{{ d.doctormodel_set.first.firstname }} {{ d.doctormodel_set.first.lastname }}</h1>
+                    <br/>
+                    Gender : {{ d.doctormodel_set.first.gender }}
+                </td>
+                <td>
+                    Email : {{ d.email }}<br/>
+                    Phone : {{ d.doctormodel_set.first.phone }}<br/>
+                </td>
+                <td>
+                    <form>
+                        <input name="user_id" value="{{ request.session.authId }}">
+                        <input name="doctor_id" value="{{ d.id }}">
+                        <div class="form-group row">
+                            <label for="email">DOB:</label>
+                            <input id="datepicker" width="300" name="dob">
+                            <script>
+                                $('#datepicker').datepicker({
+                                    uiLibrary: 'bootstrap4'
+                                });
+                            </script>
+                            <button type="submit" style="display: none">Book</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+
+    </tbody>
+</table>
+
+
+Patients view booking
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Doctor</th>
+        <th>Contact</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            <tr>
+                <td>
+                    Name :
+                    <h1>{{ d.doctormodel_set.first.firstname }} {{ d.doctormodel_set.first.lastname }}</h1>
+                    <br/>
+                    Gender : {{ d.doctormodel_set.first.gender }}
+                </td>
+                <td>
+                    Email : {{ d.email }}<br/>
+                    Phone : {{ d.doctormodel_set.first.phone }}<br/>
+                </td>
+                <td>
+                    {% if data.status == pending %}
+                        <a href="/approve_user/{{ d.id }}/" title="pay">
+                            <i class="fas fa-check-circle col-sm-6"></i>
+                        </a>
+                    {% else %}
+                        <a href="/delete_user/{{ d.id }}/" title="view_consultation">
+                            <i class="fas fa-times-circle col-sm-6"></i>
+                        </a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Payment for Booking
+
+<form role="form" action="/HandOfHope/sponsor/donation}">
+    <input type="hidden" name="request_id" value="{{ d.id }}"/>
+    <div class="form-group">
+        <label for="cardNumber">
+            CARD NUMBER</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="cardNumber"
+                   placeholder="Valid Card Number"
+                   name="card_no"
+                   required autofocus/>
+            <span class="input-group-addon"><span
+                    class="glyphicon glyphicon-lock"></span></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="cardName">
+            CARD NAME</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="cardName"
+                   placeholder="Name On The Card"
+                   name="name_in_card"
+                   required autofocus/>
+            <span class="input-group-addon"><span
+                    class="glyphicon glyphicon-lock"></span></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div class="form-group">
+                <label for="expityMonth">EXPIRY DATE</label><br/>
+                <div class="col-6 col-lg-6 pl-ziro">
+                    <input type="text" class="form-control" id="expityMonth" placeholder="MM"
+                           name="exp_month"
+                           required/>
+                </div>
+                <div class="col-xs-6 col-lg-6 pl-ziro">
+                    <input type="text" class="form-control" id="expityYear" placeholder="YY"
+                           name="exp_date"
+                           required/></div>
+            </div>
+        </div>
+        <div class="col-xs-5 col-md-5 pull-right">
+            <div class="form-group">
+                <label for="cvCode">
+                    CV CODE</label>
+                <input type="password" class="form-control" id="cvCode" placeholder="CVV"
+                       name="cvv"
+                       required/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div class="form-group">
+                <label for="donation">Donation Amount</label><br/>
+                <div class="col-12 col-lg-12 pl-ziro">
+                    <input type="text" class="form-control" id="donation" placeholder="Your Donation"
+                           name="donation_amount" value="200"
+                           readonly/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-secondary col-5 ml-5" type="submit">Proceed</button>
+                <button class="btn btn-secondary col-5 ml-5" type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+Payment for Consultation
+
+<form role="form" action="/HandOfHope/sponsor/donation}">
+    <input type="hidden" name="request_id" value="{{ d.id }}"/>
+    <div class="form-group">
+        <label for="cardNumber">
+            CARD NUMBER</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="cardNumber"
+                   placeholder="Valid Card Number"
+                   name="card_no"
+                   required autofocus/>
+            <span class="input-group-addon"><span
+                    class="glyphicon glyphicon-lock"></span></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="cardName">
+            CARD NAME</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="cardName"
+                   placeholder="Name On The Card"
+                   name="name_in_card"
+                   required autofocus/>
+            <span class="input-group-addon"><span
+                    class="glyphicon glyphicon-lock"></span></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div class="form-group">
+                <label for="expityMonth">EXPIRY DATE</label><br/>
+                <div class="col-6 col-lg-6 pl-ziro">
+                    <input type="text" class="form-control" id="expityMonth" placeholder="MM"
+                           name="exp_month"
+                           required/>
+                </div>
+                <div class="col-xs-6 col-lg-6 pl-ziro">
+                    <input type="text" class="form-control" id="expityYear" placeholder="YY"
+                           name="exp_date"
+                           required/></div>
+            </div>
+        </div>
+        <div class="col-xs-5 col-md-5 pull-right">
+            <div class="form-group">
+                <label for="cvCode">
+                    CV CODE</label>
+                <input type="password" class="form-control" id="cvCode" placeholder="CVV"
+                       name="cvv"
+                       required/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div class="form-group">
+                <label for="donation">Donation Amount</label><br/>
+                <div class="col-12 col-lg-12 pl-ziro">
+                    <input type="text" class="form-control" id="donation" placeholder="Your Donation"
+                           name="donation_amount" value="{{ d.fee }}"
+                           readonly/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-secondary col-5 ml-5" type="submit">Proceed</button>
+                <button class="btn btn-secondary col-5 ml-5" type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+Patient View Consultation Info
+
+<form class="form-wrap mt-5" action="#">
+    <div class="form-group">
+        <label>Doctor</label>
+        <input type="text" class="form-control" name="name" placeholder="Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''"
+               readonly
+               value="{{ d.loginmodel_set.first.firstname }} {{ d.loginmodel_set.first.lastname }}">
+    </div>
+    <div class="form-group">
+        <label>Token</label>
+        <input type="text" class="form-control" name="name" placeholder="Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''"
+               readonly
+               value="{{ d.token }}">
+    </div>
+    <div class="form-group">
+        <label>Fee</label>
+        <input type="text" class="form-control" name="name" placeholder="Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = ''">
+    </div>
+    <div class=" form-group row">
+        <div class="col-4">
+            <label>Date</label>
+            <input type="text" class="form-control" name="name" placeholder="Name"
+                   onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = ''">
+        </div>
+        <div class="col-4">
+            <label>Time</label>
+            <input type="text" class="form-control" name="name" placeholder="Name"
+                   onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = ''">
+        </div>
+        <div class="col-4">
+            <label>Fee</label>
+            <input type="text" class="form-control" name="name" placeholder="Name"
+                   onfocus="this.placeholder = ''"
+                   onblur="this.placeholder = ''">
+        </div>
+    </div>
+    {% if d.status == 'completed' %}
+        <div class=" form-group row">
+            <div class="col-6">
+                <label>Symptons</label>
+                <textarea rows="4" cols="50" readonly>{{ d.symptons }}</textarea>
+            </div>
+            <div class="col-6">
+                <label>Doctor Report</label>
+                <textarea rows="4" cols="50" readonly>{{ d.doctor_report }}</textarea>
+            </div>
+            <div class="col-6">
+                <label>Scaned Image</label>
+                <img src="tmp/${l.imageUrl}" alt=" " class="img-responsive"/>
+            </div>
+            <div class="col-6">
+                <label>Lab_Result</label>
+                <input type="text" class="form-control" name="name" placeholder="Name"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = ''"
+                       readonly
+                       value="{{ d.lab_result }}">
+            </div>
+
+        </div>
+    {% endif %}
+</form>
+
+
+Admin View all payment transations
+
+<table class="table table-bordered text-center text-white">
+    <thead>
+    <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Session</th>
+        <th>Status</th>
+        <th>Consultation Fee</th>
+    </tr>
+    </thead>
+    <tbody id="myTable1">
+    {% if data %}
+        {% for d in data %}
+            <tr>
+                <td>
+                    Name :
+                    <h1>{{ d.loginmodel_set.first.patientmodel_set.first.firstname }}
+                        {{ d.loginmodel_set.first.patientmodel_set.first.lastname }}</h1>
+                    <br/>
+                    DOB : {{ d.loginmodel_set.first.patientmodel_set.first.dob }}<br/>
+                    Gender : {{ d.loginmodel_set.first.patientmodel_set.first.gender }}<br/>
+                    Email : {{ d.loginmodel_set.first.email }}<br/>
+                    Phone : {{ d.loginmodel_set.first.patientmodel_set.first.phone }}<br/>
+                    Address : {{ d.loginmodel_set.first.patientmodel_set.first.address }}
+                </td>
+                <td>
+                    Name :
+                    <h1>{{ d.loginmodel_set.first.doctormodel_set.first.firstname }}
+                        {{ d.loginmodel_set.first.doctormodel_set.first.lastname }}</h1>
+                    <br/>
+                    DOB : {{ d.loginmodel_set.first.doctormodel_set.first.dob }}<br/>
+                    Gender : {{ d.loginmodel_set.first.doctormodel_set.first.gender }}<br/>
+                    Email : {{ d.loginmodel_set.first.email }}<br/>
+                    Phone : {{ d.loginmodel_set.first.doctormodel_set.first.phone }}<br/>
+                    Address : {{ d.loginmodel_set.first.doctormodel_set.first.address }}
+                </td>
+                <td>
+                    Token : {{ d.token }}<br/>
+                    Date : {{ d.date }}<br/>
+                    Time : {{ d.time }}
+                </td>
+                <td>
+                    Status : {{ d.status }}
+                </td>
+                <td>
+                    {{ d.fee }}
+                </td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <p>No requests</p>
+    {% endif %}
+    </tbody>
+</table>
+
+
+Doctor update consulting info
+
+<form>
+    <div class="form-group">
+        <label for="email">Symptoms</label>
+        {% if d.symptom == '' %}
+            <textarea rows="4" cols="50" name="comment" form="usrform">Enter Symptoms here...</textarea>
+        {% else %}
+            <textarea rows="4" cols="50" readonly>{{ d.symptons }}</textarea>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label>Fee</label>
+        <input type="number" class="form-control" name="fee" placeholder="fee"
+               onfocus="this.placeholder = ''" onblur="this.placeholder = ''" value="{{ d.fee }}">
+    </div>
+    <div class="form-group">
+        <label for="email">Report</label>
+        {% if d.symptom == '' %}
+            <textarea rows="4" cols="50" name="doctor_report"
+                      form="usrform">Enter Report here...</textarea>
+        {% else %}
+            <textarea rows="4" cols="50" readonly>{{ d.symptons }}</textarea>
+        {% endif %}
+    </div>
+    <div class="form-group row">
+        <label for="file" class="col-5 control-label">Upload Photo</label>
+        <div class="col-7">
+            <input type="file" name="file" req="file" class="form-control col-7">
+        </div>
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button class="text-uppercase btn btn-block btn-dark">Submit</button>
+    </div>
+</form>
